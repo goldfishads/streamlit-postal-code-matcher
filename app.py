@@ -14,7 +14,7 @@ def convert_df(df):
    return df.to_csv(index=False).encode('utf-8')
 
 st.title("Find matching postal code sectors - Powered by Goldfish Ads")
-st.write("This app allows you to find matching postal code sectors for a list of given districts.")
+st.write("This app allows you to find matching postal code sectors for a list of districts.")
 st.write("To get started, upload a csv file with a column named 'district' containing the districts you want to match.")
 upload_districts_table = st.file_uploader(
         "Upload a csv with the header 'district'")
